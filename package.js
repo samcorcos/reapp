@@ -7,16 +7,27 @@ Package.describe({
 });
 
 Npm.depends({
+  'exposify': '0.4.3',
   'reapp': '0.8.28'
 })
 
 Package.onUse(function(api) {
-  api.use(['react@0.1.7']);
+  api.use(['react@0.1.7', 'cosmos:browserify@0.5.0']);
   api.imply(['react@0.1.7']);
 
   api.addFiles([
+    'app.browserify.options.json',
+    'app.browserify.js',
     'reapp.jsx'
   ])
 
   api.export('Reapp')
 });
+
+//   api.add_files([
+//     'react-router.browserify.options.json',
+//     'react-router.browserify.js'
+//   ]);
+//
+//   api.export('ReactRouter');
+// });
