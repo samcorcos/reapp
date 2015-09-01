@@ -3,7 +3,7 @@
     "exposify": {
       "global": true,
       "expose": {
-        "reapp": "Reapp"
+        "reapp-ui": "Reapp"
       }
     }
   }

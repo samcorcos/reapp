@@ -8,7 +8,7 @@ Package.describe({
 
 Npm.depends({
   'exposify': '0.4.3',
-  'reapp': '0.8.28'
+  'reapp-ui': '0.12.49'
 })
 
 Package.onUse(function(api) {
@@ -18,16 +18,6 @@ Package.onUse(function(api) {
   api.addFiles([
     'app.browserify.options.json',
     'app.browserify.js',
-    'reapp.jsx'
+    'main.import.jsx'
   ])
-
-  api.export('Reapp')
 });
-
-//   api.add_files([
-//     'react-router.browserify.options.json',
-//     'react-router.browserify.js'
-//   ]);
-//
-//   api.export('ReactRouter');
-// });

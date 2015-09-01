@@ -13,4 +13,12 @@
 //   ReactRouter.lib.HashHistory = require('react-router/lib/HashHistory');
 // }
 
-Reapp = require('reapp');
+Reapp = require('reapp-ui');
+
+console.log(Reapp);
+
+
+// import Component from 'reapp-component';
+// import Request from 'reapp-request';
+// import reducer from 'reapp-reducer';
+// import UI from 'reapp-ui';
